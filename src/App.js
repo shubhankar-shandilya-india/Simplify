@@ -12,6 +12,7 @@ const style = {
   input: 'w-full rounded-md', 
   button: 'bg-[#AA96DA] hover:bg-[#FFFFD2] rounded-md w-[40px] flex items-center justify-center',
   count:'text-center p-2',
+  ul: 'overflow-auto max-h-[65vh]',
 
 };
 function App() {
