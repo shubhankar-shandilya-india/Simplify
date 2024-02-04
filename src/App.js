@@ -14,19 +14,19 @@ function App() {
 
   //Dark theme context
   const {dark,setDark} = DarkTheme()
-  const style = {
-   bg: `h-screen w-screen p-4 bg-${dark?'[#FFFFD2]':'[#000000]'}`,
-   container:  `bg-${dark?'[#C5FAD5]':'[#4B5563]'} max-w-[500px] w-full m-auto rounded-md`,
-   heading: `text-3xl text-center font-bold text-${dark?'gray-800':'[#FFFFFF]'} p-4`,
-   form: 'p-4 flex justify-around gap-[10px] h-[70px]',
-   input: `w-full rounded-md ${dark?'':'bg-[#000000] text-[#FFFFFF]'}`, 
-   button: 'bg-[#AA96DA] hover:bg-[#FFFFD2] rounded-md w-[40px] flex items-center justify-center',
-   toggleButton:`text-2xl ${dark?'bg-[#AA96DA]':'text-[#FFFFFF] bg-[#000]'}   hover:bg-[#AA96DA] hover:text-yellow-200 rounded-full w-8 m-3  p-1 `,
-   count:`text-center  p-2 text-${dark?'':'[#FFFFFF]'}`,
-   ul: 'overflow-auto max-h-[65vh]',
+
+const style = {
+  bg: `h-screen w-screen p-4 bg-${dark?'[#FFFFD2]':'[#18122B]'}`,
+  container:  `bg-${dark?'[#C5FAD5]':'[#393053]'} max-w-[500px] w-full m-auto rounded-md`,
+  heading: `text-3xl text-center font-bold text-${dark?'gray-800':'[#FFFFFF]'} p-4`,
+  form: 'p-4 flex justify-around gap-[10px] h-[70px]',
+  input: `w-full rounded-md `, 
+  button: 'bg-[#AA96DA] hover:bg-[#FFFFD2] rounded-md w-[40px] flex items-center justify-center',
+  toggleButton:`text-2xl ${dark?'bg-[#AA96DA]':'text-[#FFFFFF] bg-[#000]'}   hover:bg-[#AA96DA] hover:text-yellow-200 rounded-full w-8 m-3  p-1 `,
+  count:`text-center  p-2`,
+  ul: 'overflow-auto max-h-[65vh]',
 
 };
-
   const switchTheme = ()=>{
     setDark(!dark)
   }

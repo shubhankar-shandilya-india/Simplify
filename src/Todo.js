@@ -7,8 +7,8 @@ export const Todo = ({todo, toggleComplete, deleteTodo}) => {
   const { dark } = DarkTheme()
   
   const style={
-    li: `bg-${dark?'[#AA96DA]':'[#1A56DB] text-[#FFFFFF]'} rounded-md flex justify-between p-4 m-4`,
-    licompleted: `bg-${dark?'[#AA96DA]':'[#1A56DB] text-[#FFFFFF]'} brightness-50 rounded-md flex justify-between p-4 m-4`,
+    li: `bg-${dark?'[#AA96DA]':'[#635985] text-[#FFFFFF]'} rounded-md flex justify-between p-4 m-4`,
+    licompleted: `bg-${dark?'[#AA96DA]':'[#635985]'} brightness-50 rounded-md flex justify-between p-4 m-4`,
     row: 'flex gap-[10px]',
     textcompleted: 'ml-2 cursor-pointer line-through',
   }

@@ -5,7 +5,7 @@ const DarkThemeContext = createContext()
 
 export const TodoThemeContext = ({children}) => {
 
-    const [dark, setDark] = useState(true)
+    const [dark, setDark] = useState(false)
    
   return (
     <DarkThemeContext.Provider value={{dark,setDark}}>
