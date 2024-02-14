@@ -1,12 +1,18 @@
 import React from 'react'
 import {FaRegTrashAlt} from 'react-icons/fa'
-const style={
-    li: 'bg-[#AA96DA] rounded-md flex justify-between p-4 m-4',
-    licompleted: 'bg-[#AA96DA] brightness-50 rounded-md flex justify-between p-4 m-4',
+import { DarkTheme } from './darkmode'
+
+
+export const Todo = ({todo, toggleComplete, deleteTodo}) => {
+  const { dark } = DarkTheme()
+  
+  const style={
+    li: `bg-${dark?'[#AA96DA]':'[#635985] text-[#FFFFFF]'} rounded-md flex justify-between p-4 m-4`,
+    licompleted: `bg-${dark?'[#AA96DA]':'[#635985]'} brightness-50 rounded-md flex justify-between p-4 m-4`,
     row: 'flex gap-[10px]',
     textcompleted: 'ml-2 cursor-pointer line-through',
-}
-export const Todo = ({todo, toggleComplete, deleteTodo}) => {
+  }
+
   return (
     <li className={todo.completed?style.licompleted:style.li}>
         <div className={style.row}>
