@@ -59,7 +59,7 @@ function App() {
       <div className={style.container}>
         <h3 className={style.heading}>Simplify</h3>
         <form onSubmit={createTodo} className={style.form}>
-          <input value={input} onChange={(e)=>setInput(e.target.value)} className={style.input} type="text" name="" id="" placeholder='Add your Goals' />
+          <input value={input} onChange={(e)=>setInput(e.target.value)} className={style.input} type="text" name="" id="" placeholder='   Add your Goals' />
           <button className={style.button} ><AiOutlinePlus size = {30} /></button>
         </form>
         <ul className={style.ul}>
